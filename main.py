@@ -1,5 +1,10 @@
 # from functions import get_todos, write_todos
 import functions
+import time
+
+now = time.strftime("%b %d, %Y %H:%M:%S")
+print("Time: ", now)
+
 while True:
     user_action = input("Type add, show, edit, complete, or exit: ").strip()
     if user_action.startswith('add'):
