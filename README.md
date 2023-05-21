@@ -8,5 +8,5 @@ A todo application for silly ducks
 * Feed z python file to a python interpreter
 ```bash
 cd dodo-list
-python main.py
+python cli.py
 ```
