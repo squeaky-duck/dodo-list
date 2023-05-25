@@ -1,0 +1,13 @@
+import streamlit as st
+import functions
+
+todos = functions.get_todos()
+
+st.title("The DoDo List")
+st.subheader("A todo app for silly ducks")
+st.write("Duck forgets, duck notes it down")
+
+for todo in todos:
+    st.checkbox(todo)
+
+st.text_input(label="", placeholder="Add new todo...")
